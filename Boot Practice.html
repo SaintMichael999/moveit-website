@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Components</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        height: 100vh;
+      }
+      .box1 {
+        height: 30px;
+      }
+      .navbar-brand {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-style: italic;
+        font-size: 2rem;
+      }
+      #btn1 {
+        width: 150px;
+      }
+      #btn2 {
+        width: 150px;
+      }
+      .words-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+      }
+      .imgvan {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 70px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://google.com"
+          ><img class="box1" src="./box-seam.svg" alt="box seam" />MoveIt</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Freight (Train)</a></li>
+                <li><a class="dropdown-item" href="#">Freight (Air)</a></li>
+                <li><a class="dropdown-item" href="#">Freight (Truck)</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Postcode"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">Check</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <h1 style="text-align: center">Move With Joy</h1>
+    <p style="text-align: center; margin-left: 150px; margin-right: 150px">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deleniti
+      vitae vero aliquid cumque aperiam quibusdam repellendus at itaque nesciunt
+      molestiae reiciendis sed ea aliquam odio minus unde amet facere, iure
+      possimus eum ab dolorum necessitatibus! Labore inventore suscipit quia
+      nobis reiciendis, amet incidunt minima omnis veniam praesentium quaerat
+      hic.
+    </p>
+    <div class="words-container">
+      <button type="button" class="btn btn-primary" id="btn1">
+        Get a Quote
+      </button>
+      <button type="button" class="btn btn-light" id="btn2">Contact Us</button>
+    </div>
+    <img
+      class="imgvan"
+      draggable="true"
+      src="./moving-van.jpg"
+      alt="moving van"
+    />
+    <hr />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
